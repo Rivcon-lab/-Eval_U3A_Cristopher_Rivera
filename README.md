@@ -6,7 +6,7 @@ Landing page informativa para el emprendimiento "Tejelanas Vivi", dedicado a la 
 
 - Diseño moderno, pastel y responsivo
 - Componentes reutilizables
-- Carrusel de imágenes adaptativo
+- Carrusel de imágenes adaptativo y visualmente armonioso (imágenes centradas, fondo pastel, bordes redondeados y sombra)
 - Formulario de contacto seguro con botón directo a WhatsApp
 - Testimonios de clientes
 - Footer con acceso a Instagram
@@ -104,6 +104,7 @@ npm run preview
 ```
 
 ### ImageCarousel
+Carrusel de imágenes que muestra las imágenes completas, centradas, con fondo pastel, bordes redondeados y sombra para mejor visualización y armonía visual:
 ```jsx
 <ImageCarousel
   images={images}
