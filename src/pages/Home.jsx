@@ -14,6 +14,7 @@ import {
 import { motion } from 'framer-motion';
 import { apiService } from '../services/api';
 import { Link as RouterLink } from 'react-router-dom';
+import ImageCarousel from '../components/ImageCarousel';
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -174,49 +175,9 @@ const Home = () => {
         <Typography variant="h2" sx={{ mb: 6, textAlign: 'center' }}>
           Productos Destacados
         </Typography>
-        <Box
-          sx={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: 4,
-            '& > *': {
-              flex: {
-                xs: '1 1 100%',
-                sm: '1 1 calc(50% - 16px)',
-                md: '1 1 calc(33.33% - 22px)',
-              },
-            },
-          }}
-        >
-          {products.slice(0, 3).map((product) => (
-            <motion.div
-              key={product.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-                <CardMedia
-                  component="img"
-                  height="200"
-                  image={product.imgs[0]}
-                  alt={product.nombre}
-                />
-                <CardContent sx={{ flexGrow: 1 }}>
-                  <Typography gutterBottom variant="h5" component="h3">
-                    {product.nombre}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary" paragraph>
-                    {product.descripcion}
-                  </Typography>
-                  <Typography variant="h6" color="primary">
-                    ${product.precio.toLocaleString()}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
-        </Box>
+        <ImageCarousel
+          images={products.slice(0, 3).map(product => product.imgs[0])}
+        />
       </Container>
 
       {/* Featured Services Section */}

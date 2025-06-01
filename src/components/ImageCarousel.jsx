@@ -53,7 +53,10 @@ function ImageCarousel({ images }) {
           style={{
             width: '100%',
             height: '100%',
-            objectFit: 'cover',
+            objectFit: 'contain',
+            background: '#fae6e7',
+            borderRadius: 16,
+            boxShadow: '0 4px 24px rgba(0,0,0,0.08)',
             position: 'absolute',
             top: 0,
             left: 0,
