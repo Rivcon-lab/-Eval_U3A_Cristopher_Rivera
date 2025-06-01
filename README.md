@@ -112,20 +112,3 @@ Carrusel de imágenes que muestra las imágenes completas, centradas, con fondo 
   interval={5000}
 />
 ```
-
-## 🤝 Contribución
-
-1. Haz un fork del proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
-
-## 📞 Contacto
-
-Instagram: [@teje_lanas.vivi](https://instagram.com/teje_lanas.vivi)
-WhatsApp: [wa.me/56976322314](https://wa.me/56976322314) 
