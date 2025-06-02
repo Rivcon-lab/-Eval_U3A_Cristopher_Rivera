@@ -67,6 +67,12 @@ npm install
 npm run dev
 ```
 
+4.Habilitar  cors anywhere a fin de que carguen los llamados a la api externa.
+```
+
+https://cors-anywhere.herokuapp.com/corsdemo
+```
+
 ## 🏗️ Estructura del Proyecto
 
 ```
